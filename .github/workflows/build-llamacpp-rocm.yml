@@ -307,6 +307,7 @@ jobs:
           -DGGML_HIP=ON ^
           -DGGML_OPENMP=OFF ^
           -DGGML_CUDA_FORCE_CUBLAS=OFF ^
+          -DGGML_CUDA_FA_QUANTS="q4_0-q4_0;q8_0-q8_0;q8_0-q4_0;f16-f16;bf16-bf16" ^
           -DGGML_RPC=ON ^
           -DGGML_HIP_ROCWMMA_FATTN=OFF ^
           -DLLAMA_BUILD_BORINGSSL=ON ^
